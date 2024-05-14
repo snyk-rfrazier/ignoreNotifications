@@ -1,0 +1,28 @@
+{
+    "version": "0",
+    "id": "a9df7e35-f724-8061-c59c-dfb5c2874201",
+    "detail-type": "audit_log",
+    "source": "aws.partner/snyk.io/org_ba9bbd10-7d67-41c4-92f7-2f0ab99de73b_478468688580_us-east-1/audit_logs",
+    "account": "478468688580",
+    "time": "2024-05-08T19:49:10Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "event": "org.project.ignore.create",
+      "actingGroupPublicId": "1020ddae-b223-4041-b6e9-c0a1bc2f6095",
+      "actingOrgPublicId": "ba9bbd10-7d67-41c4-92f7-2f0ab99de73b",
+      "actingUserPublicId": "87349146-e03c-462d-80b0-3ed3d7825576",
+      "actingProjectPublicId": "99a7515c-2b48-4d90-85b4-6ca5bd098e51",
+      "content": {
+        "created": "2024-05-08T19:49:08.404Z",
+        "expires": "2024-05-22T19:49:07.536Z",
+        "ignorePath": "*",
+        "ignoredBy": {
+          "id": "87349146-e03c-462d-80b0-3ed3d7825576"
+        },
+        "issueId": "2315c382-26ae-4589-80fd-cac20ce8617f",
+        "reason": "This is fine.",
+        "reasonType": "temporary-ignore"
+      }
+    }
+  }
