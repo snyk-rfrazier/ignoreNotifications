@@ -5,8 +5,6 @@ export const handler = async (event) => {
   const details = event.detail;
   const content = details.content;
   
-  console.log("event.detail :", JSON.stringify(event.detail))
-
   const ignoredByUserId = details.actingUserPublicId;
   const actingOrgPublicId = details.actingOrgPublicId;
   const projectId = details.actingProjectPublicId
@@ -30,7 +28,7 @@ export const handler = async (event) => {
 
   const params = {
     Message: message,
-    Subject: "Snyk Ignore Created Alert",
+    Subject: `Snyk Ignore Alert for Issue: ${issueId}`,
     TopicArn: "arn:aws:sns:us-east-1:590183812647:audit-log"
   };
   

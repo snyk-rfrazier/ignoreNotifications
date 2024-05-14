@@ -5,8 +5,6 @@ export const handler = async (event) => {
   const details = event.detail;
   const content = details.content;
   
-  console.log("event.detail :", JSON.stringify(event.detail))
-
   const ignoredByUserId = details.actingUserPublicId;
   const actingOrgPublicId = details.actingOrgPublicId;
   const projectId = details.actingProjectPublicId
